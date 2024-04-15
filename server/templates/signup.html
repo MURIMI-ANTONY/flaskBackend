@@ -1,0 +1,50 @@
+{% extends "base.html" %} 
+{% block title %}Signup{% endblock %}
+{% block content %}
+<h1 class="text-3xl text-center">SignUp </h1>
+<form method="POST">
+    <div class="form flex flex-col">
+        <div>
+            <label for="firstName">First Name</label>
+            <input 
+            type="text"
+            placeholder="" 
+            class="w-72  h-8 rounded mt-4 border-2 border-teal-200" 
+            id="firstName"
+            name="firstName">
+        </div>
+        <div>
+            <label for="secondName">Second Name</label>
+            <input 
+            type="text" 
+            placeholder="" 
+            class="w-72  h-8 rounded mt-4 border-2 border-teal-200" 
+            id="secondName"
+            name="secondName">
+        </div>
+        <div>
+            <label for="email">Email Address</label>
+            <input 
+            type="email" 
+            placeholder="xxxx@gmail.com"
+            class="w-72  h-8 rounded mt-4 border-2 border-teal-200"
+            name="email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input 
+            type="password"
+            class="w-72  h-8 rounded mt-4 border-2 border-teal-200"
+            name="password">
+        </div>
+        <div>
+            <label for="password">Password (Confirm)</label>
+            <input 
+            type="password"
+            class="w-72  h-8 rounded mt-4 border-2 border-teal-200"
+            name="password2">
+        </div>
+        <button  type="submit" class="bg-black text-white rounded-full w-20 h-8 text-center mt-4 ml-40">Submit</button>
+    </div>
+</form>
+{% endblock %}

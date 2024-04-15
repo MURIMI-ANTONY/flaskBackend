@@ -1,0 +1,28 @@
+{% extends "base.html" %} 
+{% block title %}Login{% endblock %}
+{% block content %}
+<h1 class="text-3xl"> Login </h1>
+
+<form method="POST" enctype="application/x-www-form-urlencoded">
+    <div class="form flex flex-col">
+        
+        <div>
+            <label for="email">Email Address</label>
+            <input 
+            type="email" 
+            placeholder="xxxx@gmail.com"
+            class="w-72  h-8 rounded mt-4 border-2 border-teal-200"
+            name="email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input 
+            type="password"
+            class="w-72  h-8 rounded mt-4 border-2 border-teal-200"
+            name="password">
+        </div>
+        
+        <button  type="submit" class="bg-black text-white rounded-full w-20 h-8 text-center mt-4 ml-40">Login</button>
+    </div>
+</form>
+{% endblock %}
